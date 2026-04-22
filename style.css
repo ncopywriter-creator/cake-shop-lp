@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+body{
+    background-color: #fff;
+    font-family: "Inter" , "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    }
+
+
+.href{
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* hero */
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+   
+    height: 678px;
+    background:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),url("top-cake.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat ;
+}
+
+.hero h1{
+    font-size: 64px;
+    font-weight: 400;   
+}
+
+.hero p{
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #E42E77;
+    color: #000;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: regular;
+}
+
+/* ttl */
+
+.ttl-inner{
+    background-color: #fff;
+}
+
+.ttl-header{
+    text-align: center;
+}
+.ttl h1{
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 90px 0px 10px;
+    text-align: center;
+}
+
+.ttl-text{
+    font-size: 24px;
+}
+
+.cake-text{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cake-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* これで狭い時に縦に並びます */
+    padding: 20px;
+}
+
+.cake-item {
+    width: 100%;
+    max-width: 320px; /* カードの幅を少しスリムに */
+    text-align: center;
+}
+
+.cake-img {
+    width: 100%;
+    height: 300px;    /* 高さを揃えるとかっこいいです */
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.cake-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cake-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.cake-price {
+    font-size: 18px;
+    color: #E42E77;
+    font-weight: bold;
+}
+
+
+/* feature */
+
+.feature{
+    padding: 60px 0;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+
+.feature-ttl {
+    font-size: 32px;
+}
+
+.feature-subttl{
+    font-size: 24px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+    gap: 30px;              /* カード同士の隙間 */
+    }
+
+.feature-item {
+    background-color: #fff;
+    width: 300px;           /* カードの幅 */
+    padding: 40px 20px;
+    border-radius: 20px;    /* 角丸 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* ほんのり影 */
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #FFD9E8; /* アイコンの背景 */
+    margin: 0 auto 20px;
+    /* 中のドットを少し濃いピンクにするなら */
+    /* ...上のコードの続き... */
+    color: #F02C71;       /* ドット（●）の色 */
+    font-size: 25px;      /* ドットの大きさ */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ほんのり影をつける */
+    border-radius: 50%;    /* これで丸くなります */
+    display: flex;         /* 中のドットを真ん中に置くための設定 */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.feature-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* contact */
+.contact{
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.inner{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.contact-ttl {
+    font-size: 24px;
+    padding-top: 40px;
+}
+
+.contact-sabttl{
+    font-size: 24px;
+}
+
+.contact-form{
+    margin-top: 40px 
+}
+
+.form-item{
+    margin-bottom: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+
+}
+
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  max-width: 840px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.form-item label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form button {
+  display: block;
+  width: 60%;
+  margin: 40px auto 0;
+  padding: 14px;
+  background-color: #F02C71;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttontype{
+    font-style: 16px;
+}
+
+/* footer */
+.footer {
+    background-color: #011E3F; 
+    color: #fff;               /* 文字を白に */
+    padding: 60px 0 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* 3つの要素を均等に配置 */
+    gap: 40px;
+    text-align: left;              /* 中のテキストは左揃え */
+    margin-bottom: 60px;           /* 下のコピーライトとの間隔 */
+    flex-wrap: wrap;               /* スマホで縦に並ぶように */
+}
+
+.footer-info {
+    width: 250px;
+}
+
+.footer-info h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-info p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* 一番下のコピーライト */
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* 薄い線を入れる */
+    padding-top: 20px;
+}
